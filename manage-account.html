@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    <link rel="apple-touch-icon" sizes="57x57" href="/packtlib-nv/images/apple-icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/packtlib-nv/images/apple-icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/packtlib-nv/images/apple-icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/packtlib-nv/images/apple-icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/packtlib-nv/images/apple-icons/apple-icon-180x180.png">
+
+    <title>Mapt - Developer Skills Delivered</title>
+
+    <!-- Bootstrap Core CSS -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/bootstrap-xl.css" rel="stylesheet">
+    
+
+
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+    <!-- Prism -->
+    <link rel="stylesheet" href="css/prism.css">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Lato:400,500,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="language-markup">
+
+  
+
+    <div id="wrapper">
+        
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <div class="list-group" id="sidebar-nav" role="tablist" aria-multiselectable="true">
+              <li class="nav-logo "><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu"><img src="images/mapt-logo.png" class=""></span><span class="pull-left mr5"></span></a>    </li>
+              <div class="clearfix"></div>
+              <li class="active"><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">Clients</span><span class="pull-left mr5"></span></a>    </li>
+              
+              <li class=""><a data-toggle="collapse" data-parent="#sidebar-nav" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="sidenav-menu-holder"><span class="sidenav-menu">Account</span><span class="pull-left mr5"></span></a>    </li>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <li class="sub-nav"><a href="account-details.html" class="sidenav-menu-holder"><span class="sidenav-menu">Account Details</span><span class="pull-left mr5"></span></a>    </li>
+                <li class="sub-nav"><a href="dashboard-lo.html" class="sidenav-menu-holder"><span class="sidenav-menu">Logout</span><span class="pull-left mr5"></span></a>    </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <!-- /#sidebar-wrapper -->
+
+        <div id="page-content-wrapper" class="">
+        <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-2x mr5"></i></a>
+        <div class="jumbotron heading mb0">
+          <div class="container-fluid">
+              <div class="col-sm-12 col-lg-offset-1 col-lg-10">
+                <div class="row">
+                  <div class="page-title">
+                    <h3 class="ng-binding mb0">Accenture</h3>
+                    <ol class="breadcrumb mb0 pb0">
+                      <li><a href="dashboard.html"><h6>Clients</h6></a></li>
+                      <li class="active">Accenture</li>
+                    </ol>
+                  </div>
+                  <hr class="mt10">
+                </div>
+              </div>
+          </div>
+        </div>
+          
+       <div class="container-fluid">               
+          <div class="row">
+              <div class="col-sm-6 col-lg-offset-1 col-lg-5 mt10">
+                            <h6>Last 14 Days Activity:</h6>
+                            <div id="chartdiv"></div>
+              </div>
+              <div class="col-sm-6 col-lg-5 mt10">
+                <h6>Client Information:</h6>
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="name" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="name" class="form-control" id="inputEmail3" placeholder="Name here" value="Accenture">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Admin</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputPassword3" placeholder="Email here" value="jennyroberts@accenture.com">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Type</label>
+                    <div class="col-sm-10">
+                      <select class="form-control">
+                        <option>Consultancy</option>
+                        <option>Retail</option>
+                        <option>Technology</option>
+                        <option>Charity</option>
+                        <option>Engineering</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <button type="submit" class="btn btn-default pull-right mr15">Save Changes</button>
+                  </div>
+                </form>
+              </div>
+              <div class="clearfix">
+              </div>
+              <div class="col-lg-offset-1 col-lg-2 mt20">
+                <div class="panel">
+                  <div class="panel-body text-center">
+                    <h6>Total Subscribers</h6>
+                    <h3 class="mt10">2,500</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 mt20">
+                <div class="panel">
+                  <div class="panel-body text-center">
+                    <h6>% Active - Last 30 Days</h6>
+                    <h3 class="mt10">72%</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 mt20">
+                <div class="panel">
+                  <div class="panel-body text-center">
+                    <h6>% Active Days - Last 30 Days</h6>
+                    <h3 class="mt10">12%</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 mt20">
+                <div class="panel">
+                  <div class="panel-body text-center">
+                    <h6>Assessments Taken</h6>
+                    <h3 class="mt10">4,194</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 mt20">
+                <div class="panel">
+                  <div class="panel-body text-center">
+                    <h6>Skills Completed</h6>
+                    <h3 class="mt10">6,651</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-offset-1 col-lg-10">
+                <table class="table table-bordered">
+                  <thead> 
+                    <tr><th><h6>Email Address</h6></th> <th><h6 class="text-center">Page Views - Last 30 Days</h6></th> <th><h6 class="text-center">% Active Days - Last 30 Days</h6></th> <th><h6 class="text-center">Action</h6></th> </tr> 
+                  </thead>
+                   <tbody>
+                    <tr> <td><a href="mailto:jennyroberts@accenture.com">jennyroberts@accenture.com</a></td> <td class="text-center">524</td>
+                      <td class="text-center">
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 72%;">
+                            72%
+                          </div>
+                        </div>
+                      </td> 
+                      <td class="text-center"><a href="manage-account.html">View</a></td> </tr>
+                    <tr> <td><a href="mailto:jennyroberts@accenture.com">paddyg@accenture.com</a></td> <td class="text-center">625</td> <td class="text-center">
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 54%;">
+                            54%
+                          </div>
+                        </div>
+                    </td><td class="text-center"><a href="manage-account.html">View</a></td> </tr>
+                    <tr> <td><a href="mailto:jennyroberts@accenture.com">ryanp@accenture.com</a></a></td> <td class="text-center">189</td> 
+                    <td class="text-center">
+                      <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 26%;">
+                            26%
+                          </div>
+                        </div>
+                    </td><td class="text-center"><a href="manage-account.html">View</a></td> </tr> 
+                    <tr> <td><a href="mailto:jennyroberts@accenture.com">jennyroberts@accenture.com</a></td> <td class="text-center">524</td>
+                      <td class="text-center">
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 72%;">
+                            72%
+                          </div>
+                        </div>
+                      </td> 
+                      <td class="text-center"><a href="manage-account.html">View</a></td> </tr>
+                    <tr> <td><a href="mailto:jennyroberts@accenture.com">paddyg@accenture.com</a></td> <td class="text-center">625</td> <td class="text-center">
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 54%;">
+                            54%
+                          </div>
+                        </div>
+                    </td><td class="text-center"><a href="manage-account.html">View</a></td> </tr>
+                    <tr> <td><a href="mailto:jennyroberts@accenture.com">ryanp@accenture.com</a></a></td> <td class="text-center">189</td> 
+                    <td class="text-center">
+                      <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 26%;">
+                            26%
+                          </div>
+                        </div>
+                    </td><td class="text-center"><a href="manage-account.html">View</a></td> </tr>
+                    <tr> <td><a href="mailto:jennyroberts@accenture.com">jennyroberts@accenture.com</a></td> <td class="text-center">524</td>
+                      <td class="text-center">
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 72%;">
+                            72%
+                          </div>
+                        </div>
+                      </td> 
+                      <td class="text-center"><a href="manage-account.html">View</a></td> </tr>
+                    <tr> <td><a href="mailto:jennyroberts@accenture.com">paddyg@accenture.com</a></td> <td class="text-center">625</td> <td class="text-center">
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 54%;">
+                            54%
+                          </div>
+                        </div>
+                    </td><td class="text-center"><a href="manage-account.html">View</a></td> </tr>
+                    <tr> <td><a href="mailto:jennyroberts@accenture.com">ryanp@accenture.com</a></a></td> <td class="text-center">189</td> 
+                    <td class="text-center">
+                      <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 26%;">
+                            26%
+                          </div>
+                        </div>
+                    </td><td class="text-center"><a href="manage-account.html">View</a></td> </tr> 
+                    <tr> <td><a href="mailto:jennyroberts@accenture.com">jennyroberts@accenture.com</a></td> <td class="text-center">524</td>
+                      <td class="text-center">
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 72%;">
+                            72%
+                          </div>
+                        </div>
+                      </td> 
+                      <td class="text-center"><a href="manage-account.html">View</a></td> </tr>
+                   
+
+                  </tbody> 
+                </table>
+                <nav aria-label="Page navigation" >
+                  <ul class="pagination mt0 pull-right">
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">53</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+          </div><!-- row -->
+      </div><!-- /container-fluid -->
+  </div><!-- /#wrapper -->
+    
+
+    <!-- JAVASCRIPT BLOCKS -->
+
+    <!-- jQuery Script-->
+    <script src="js/jquery.js"></script>
+    <!-- Syntax Highlighting Script -->
+    <script src="js/prism.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Sidebar Toggle Script -->
+    <script src="js/simple-sidebar.js"></script>
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <script src="https://www.amcharts.com/lib/3/themes/none.js"></script>
+    <!-- Chart code -->
+    <script>
+    var chart = AmCharts.makeChart("chartdiv", {
+      "type": "serial",
+      "theme": "light",
+      "marginTop": 30,
+      "autoMarginOffset": 20,
+      "marginRight": 30,
+      "marginBottom": 30,
+      "backgroundAlpha": 1,
+      "backgroundColor": "#fff",
+      "color": "rgba(0,0,0,0.5",
+      "dataProvider": [{
+        "year": "11/08",
+        "sales": 2,
+      }, {
+        "year": "12/08",
+        "sales": 3,
+      }, {
+        "year": "13/08",
+        "sales": 9,
+      }, {
+        "year": "14/08",
+        "sales": 8,
+      }, {
+        "year": "15/08",
+        "sales": 0,
+      }, {
+        "year": "16/08",
+        "sales": 0,
+      }, {
+        "year": "17/08",
+        "sales": 0,
+      }, {
+        "year": "18/08",
+        "sales": 4,
+      }, {
+        "year": "19/08",
+        "sales": 14,
+      }, {
+        "year": "20/08",
+        "sales": 1,
+      }, {
+        "year": "21/08",
+        "sales": 3,
+      }, {
+        "year": "22/08",
+        "sales": 0,
+      }, {
+        "year": "23/08",
+        "sales": 0,
+      }, {
+        "year": "24/08",
+        "sales": 4,
+      }],
+      "graphs": [{
+        "title": "Section Views",
+        "lineColor": "#eb711e",
+        "lineAlpha": 0.7,
+        "lineThickness": 2,
+        "bulletAlpha": 1,
+        "bullet": "round",
+        "bulletBorderThickness": 2,
+        "bulletBorderAlpha": 1,
+        "bulletSize": 10,
+        "bulletColor": "#eb711e",
+        "useLineColorForBulletBorder": true,
+        "valueField": "sales",
+        "balloonText": "<span style='font-family: Montserrat;'>[[title]]</span><br /><span style='font-size: 16px;'>[[value]]</span>"
+      }],
+      "categoryField": "year",
+      "categoryAxis": {
+        "axisAlpha": 0,
+        "gridAlpha": 0,
+        "labelsEnabled": false,
+        "ignoreAxisWidth": true
+      },
+      "valueAxes": [{
+        "gridColor": "#eee",
+        "gridAlpha": 1,
+        "axisAlpha": 0
+      }],
+      "chartCursor": {
+        "cursorAlpha": 0,
+        "categoryBalloonEnabled": true,
+        "categoryBalloonColor": "#f2b146",
+        "color": "#fff",
+      },
+      "balloon":{
+        "adjustBorderColor":false,
+        "borderThickness":1,
+        "color":"#fff"
+      }
+    });
+    </script>
+    <script src="js/sidenav-accordion.js"></script>
+
+
+    <script type="text/javascript">
+    $("#myButton").click(function() {
+         $("#myDiv").fadeTo("slow", 0.01, function(){ //fade
+             $(this).slideUp("slow", function() { //slide up
+                 $(this).remove(); //then remove from the DOM
+                });
+             });
+    });
+    </script>
+</body>
+
+</html>
