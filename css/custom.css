@@ -8,6 +8,15 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 300;
     line-height: 1.1;
 }
+body.b2b-login {
+  background: #424242;
+    background-image: url('images/bg.png');
+}
+
+body.b2b-login h4  {
+  color: white;
+}
+
 .reader-container p,
 .reader-container ul,
 .tab-content {
