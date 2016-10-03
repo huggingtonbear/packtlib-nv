@@ -13,8 +13,9 @@ body.b2b-login {
     background-image: url('images/bg.png');
 }
 
-body.b2b-login h4  {
+body.b2b-login .expired-message, body.b2b-login h4  {
   color: white;
+  text-align: center;
 }
 
 .reader-container p,
